@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.div-inicio{
+	width: 100%;
+	height: 100vh;
+	/*display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas: 
+		"barraSuperior barraSuperior"
+		"titulo imagen";*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.h1-inicioNombre{
+	font-size: 5em;
+	font-family: Century;
+}
+
+.div-skills{
+	width: 100%;
+	padding: 1%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas: "h1 h1 h1 h1 h1";
+}
+
+.div-skills .h1-tituloSkills{
+	grid-area: h1;
+	text-align: center;
+	padding: 1%;
+	margin: 1%;
+}
+
+.div-contenerdor-skill{
+	justify-self: center;
+}
+
+/*RRSS*/
+
+/*.div-inicio-RRSS{
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.div-facebook, .div-instagram{
+	position: relative;
+	padding: 3%;
+}
+
+.a-facebook, .a-instagram{
+	font-size: 10px;
+	padding: 1em;
+	border-radius: 50%;
+	margin: 0;
+	box-shadow: none;
+	text-decoration: none;
+	background-color: #3b5998;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
+}
+
+.span-facebook, .span-instagram{
+	box-sizing: border-box;
+	position: absolute;
+	clip: rect(0,0,0,0);
+	border: 0;
+	font-size: 10px;
+}
+
+.i-facebook, .i-instagram{
+	width: 1em;
+	height: 1em;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	cursor: pointer;
+	word-break: break-word;
+}
+
+.a-facebook{
+	background-image: url("../img/facebook-svgrepo-com.svg");
+	background-repeat: no-repeat;
+}
+
+.a-instagram{
+	background-image: url("../img/iconfinder_instagram_2142569.png");
+	background-repeat: no-repeat;
+}*/
+
+.div-inicioFoto{
+	/*background-repeat: no-repeat;
+	background-position: right center;*/
+	/*background-size: 150%;
+	grid-area: imagen;*/
+}
+	
+/*.div-inicio{
+	background-color: rgba(50,50,50,0.5);
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+}*/
+/*
+.div-inicio-inicialesIdiomas{
+	position: relative;
+	width: 18%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	column-gap: 2px;
+}
+
+.div-inicio-inicialesIdiomas span{
+	flex-grow: 1;
+	text-align: center;
+	font-size: 17px;
+}
+
+.div-inicio-inicialesIdiomas a{
+	color: #FBFAFB;
+}*/
+
+/*@media(max-width: 700px){
+	.div-inicio-letrasOMI h1{
+		font-size: 5em;
+	}
+}
+
+@media(max-width: 500px){
+	.div-inicio-letrasOMI h1{
+		font-size: 3.5em;
+	}
+
+	.div-inicio-inicialesIdiomas span{
+		font-size: 14px;
+	}
+}*/
