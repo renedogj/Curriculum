@@ -10,112 +10,149 @@
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/timeline.css">
+	<link rel="stylesheet" type="text/css" href="css/lenguajes.css">
 </head>
 <body>
 	<div class="div-inicio">
 		<h1 class="h1-inicioNombre" id="h1-InicioNombre"></h1>
 		<!--<div class="div-inicioFoto"></div>-->
 	</div>
-	<!-- <div class="div-skills"> -->
-		<!-- <h1 class="h1-tituloSkills">Mis skills</h1>
-		<div class="div-contenerdor-skill">
-			<h1>Java</h1>
-		</div>
-		<div class="div-contenerdor-skill">
-			<h1>HTML y CSS</h1>
-		</div>
-		<div class="div-contenerdor-skill">
-			<h1>JavaScript</h1>
-		</div>
-		<div class="div-contenerdor-skill">
-			<h1>PHP</h1>
-		</div>
-		<div class="div-contenerdor-skill">
-			<h1>SQL y PL_SQL</h1>
-		</div> -->
-		<div class="timeline">
-			<div class="experiencia">
-				<div class="container experiencia-2">
-					<div class="content">
-						<h3>Desarrollador de software</h3>
-						<h4>Saints</h4>
-						<p class="periodo">Agosto de 2024 - Actualidad (6 meses)</p>
-						<ul class="ulDescripcion">
-							<li>Desarrollo de aplicaciones IOS y Android usando Ionic con Vue.js</li>
-							<li>Gestion de archivos JSON y bases de datos no relacionales con python</li>
-						</ul>
-					</div>
+	<div class="timeline">
+		<div class="experiencia">
+			<div class="container experiencia-2">
+				<div class="content">
+					<h3>Desarrollador de software</h3>
+					<h4>Saints</h4>
+					<p class="periodo">Agosto de 2024 - Actualidad (6 meses)</p>
+					<ul class="ulDescripcion">
+						<li>Desarrollo de aplicaciones IOS y Android usando Ionic con Vue.js</li>
+						<li>Gestion de archivos JSON y bases de datos no relacionales con python</li>
+					</ul>
 				</div>
-				<div class="container experiencia-1">
-					<div class="content">
-						<h3>Consultor técnico en el Departamento de SAP</h3>
-						<h4>NTT-Data</h4>
-						<p class="periodo">septiembre de 2023 - octubre de 2023 (2 años)</p>
-						<ul class="ulDescripcion">
-							<li>Creación y desarrollo Frontend de aplicaciones conectándolas con aplicaciones Backend (desarrolladas con SAP CAP) utilizando SAP UI5</li>
-							<li>Creación y desarrollo Backend de aplicaciones, haciendo consultas a bases de datos y administrando las mismas utilizando SAP CAP</li>
-
-							<li>Planificación y estimación del desarrollo de las distintas tareas</li>
-
-							<li>Localizar y solucionar con éxito errores encontrados en distintos algoritmos</li>
-
-							<li>Presentar y exponer el avance en las distintas aplicaciones explicando su funcionamiento y como se han realizado, así como creación de material audiovisual como apoyo de la presentación.</li>
-
-							<li>Realización de documentación de proyectos y realización y ejecución de planes de pruebas</li>
-						<ul>
-					</div>
-				</div>
-				<div class="experiencia--1"></div>
 			</div>
-			<div class="formacion">
-				<!-- <div class="formacion-0"></div> -->
-				<div class="container formacion-4">
-					<div class="content">
-						<h3>Grado en Ciberseguridad</h3>
-						<h4>Universidad internacional de la Rioja (UNIR)</h4>
-						<p class="periodo">septiembre 2024 – Actualidad</p>
-					</div>
-				</div>
-				<div class="container formacion-3">
-					<div class="content">
-						<h3>Master en Ciberseguridad</h3>
-						<h4>ENIIT – UCAM</h4>
-						<p class="periodo">septiembre de 2023 - octubre de 2023 (2 años)</p>
-						<!-- <a>Más información</a> -->
-					</div>
-				</div>
-				<div class="formacion-25"></div>
-				<div class="container  formacion-2">
-					<div class="content">
-						<h3>Técnico Superior de Desarrollo de Aplicaciones WEB</h3>
-						<p class="periodo">junio de 2022</p>
-						<!-- <a>Más información</a> -->
-					</div>
-				</div>
-				<div class="container formacion-1">
-					<div class="content">
-						<h3>Técnico Superior de Desarrollo de Aplicaciones Multiplataforma</h3>
-						<p class="periodo">junio de 2021</p>
-						<!-- <a>Más información</a> -->
-					</div>
-				</div>
-				<!-- <div class="formacion--1"></div> -->
-			</div>
-		</div>
-		<script type="text/javascript">
-			var i = 0;
-			var txt = "Javier Renedo";
+			<div class="container experiencia-1">
+				<div class="content">
+					<h3>Consultor técnico en el Departamento de SAP</h3>
+					<h4>NTT-Data</h4>
+					<p class="periodo">septiembre de 2023 - octubre de 2023 (2 años)</p>
+					<ul class="ulDescripcion">
+						<li>Creación y desarrollo Frontend de aplicaciones conectándolas con aplicaciones Backend (desarrolladas con SAP CAP) utilizando SAP UI5</li>
+						<li>Creación y desarrollo Backend de aplicaciones, haciendo consultas a bases de datos y administrando las mismas utilizando SAP CAP</li>
 
-			function typeWriter() {
-				if (i < txt.length) {
-					$("#h1-InicioNombre").text($("#h1-InicioNombre").text() + txt.charAt(i));
-					i++;
-					setTimeout(typeWriter, 60);
-				}
+						<li>Planificación y estimación del desarrollo de las distintas tareas</li>
+
+						<li>Localizar y solucionar con éxito errores encontrados en distintos algoritmos</li>
+
+						<li>Presentar y exponer el avance en las distintas aplicaciones explicando su funcionamiento y como se han realizado, así como creación de material audiovisual como apoyo de la presentación.</li>
+
+						<li>Realización de documentación de proyectos y realización y ejecución de planes de pruebas</li>
+					</ul>
+				</div>
+			</div>
+			<div class="experiencia--1"></div>
+		</div>
+		<div class="formacion">
+			<!-- <div class="formacion-0"></div> -->
+			<div class="container formacion-4">
+				<div class="content">
+					<h3>Grado en Ciberseguridad</h3>
+					<h4>Universidad internacional de la Rioja (UNIR)</h4>
+					<p class="periodo">septiembre 2024 – Actualidad</p>
+				</div>
+			</div>
+			<div class="container formacion-3">
+				<div class="content">
+					<h3>Master en Ciberseguridad</h3>
+					<h4>ENIIT – UCAM</h4>
+					<p class="periodo">septiembre de 2023 - octubre de 2023 (2 años)</p>
+				</div>
+			</div>
+			<div class="formacion-25"></div>
+			<div class="container  formacion-2">
+				<div class="content">
+					<h3>Técnico Superior de Desarrollo de Aplicaciones WEB</h3>
+					<p class="periodo">junio de 2022</p>
+				</div>
+			</div>
+			<div class="container formacion-1">
+				<div class="content">
+					<h3>Técnico Superior de Desarrollo de Aplicaciones Multiplataforma</h3>
+					<p class="periodo">junio de 2021</p>
+				</div>
+			</div>
+			<!-- <div class="formacion--1"></div> -->
+		</div>
+	</div>
+	<div class="lenguajesTecnologia">
+		<!-- <p>centro</p> -->
+		<div class="cicurloGrandre ciruloBackend circuloLateral">
+			<h5>Lenguajes generales y back-end</h5>
+			<div class="circulo" style="background:red">Java</div>
+			<div class="circulo" style="background:green">Python</div>
+			<div class="circulo" style="background:yellow">PHP</div>
+			<div class="circulo" style="background:orange">Kotlin</div>
+			<div class="circulo" style="background:blue">Nodejs</div>
+		</div>
+		<div class="cicurloGrandre circuloFronted">
+			<h5>Lenguajes front-end</h5>
+			<div class="circulo" style="background:red">HTML</div>
+			<div class="circulo" style="background:green">CSS</div>
+			<div class="circulo" style="background:yellow">JavaScript</div>
+			<div class="circulo" style="background:orange">TypeScript</div>
+			<div class="circulo" style="background:blue">Vue.js</div>
+			<div class="circulo" style="background:salmon">React.js</div>
+			<div class="circulo" style="background:black">jQuery</div>
+			<div class="circulo" style="background:black">Bootstrap</div>
+		</div>
+		<div class="cicurloGrandre circuloDDBB circuloLateral">
+			<h5>Bases de datos y manejo de datos</h5>
+			<div class="circulo" style="background:red">SQL</div>
+			<div class="circulo" style="background:green">PL/SQL</div>
+			<div class="circulo" style="background:yellow">MongoDB</div>
+			<div class="circulo" style="background:orange">Firebase</div>
+			<div class="circulo" style="background:blue">JSON</div>
+			<div class="circulo" style="background:salmon">XML</div>
+		</div>
+	</div>
+	<div class="extra">
+		
+	</div>
+	<script type="text/javascript">
+		var i = 0;
+		var txt = "Javier Renedo";
+
+		function typeWriter() {
+			if (i < txt.length) {
+				$("#h1-InicioNombre").text($("#h1-InicioNombre").text() + txt.charAt(i));
+				i++;
+				setTimeout(typeWriter, 60);
 			}
-			$(document).ready(() => {
-				typeWriter();
+		}
+
+		$(document).ready(() => {
+			typeWriter();
+		});
+
+		const n = 7;  // numero de circulos
+		const r = 150; // radio
+
+		let angulo = 0;
+		var arrCirculos = {"ciruloBackend": 5, "circuloFronted": 8, "circuloDDBB": 6 };
+
+		for (let nombreCirculo in arrCirculos) {
+			const circles = document.querySelectorAll("." + nombreCirculo + " .circulo");
+			console.log(circles);
+			colocarDivCirculo(circles, arrCirculos[nombreCirculo], 150);
+		}
+
+		function colocarDivCirculo(cirulos, numCirculos, radio) {
+			let originX = cirulos[0].offsetLeft;
+			let originY = cirulos[0].offsetTop;
+			cirulos.forEach((element,i) => {
+				element.style.left = `${originX + radio*Math.cos(angulo + 2*Math.PI/numCirculos*i)}px`;
+				element.style.top = `${originY + radio*Math.sin(angulo + 2*Math.PI/numCirculos*i)}px`;
 			});
-		</script>
-	</body>
-	</html>
+		}
+	</script>
+</body>
+</html>
