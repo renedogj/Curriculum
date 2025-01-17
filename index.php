@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Javier Renedo</title>
+	<meta name=author content="Javier Renedo">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
@@ -52,7 +53,6 @@
 			<div class="experiencia--1"></div>
 		</div>
 		<div class="formacion">
-			<!-- <div class="formacion-0"></div> -->
 			<div class="container formacion-4">
 				<div class="content">
 					<h3>Grado en Ciberseguridad</h3>
@@ -80,38 +80,89 @@
 					<p class="periodo">junio de 2021</p>
 				</div>
 			</div>
-			<!-- <div class="formacion--1"></div> -->
 		</div>
 	</div>
-	<div class="lenguajesTecnologia">
+	<div class="lenguajesTecnologias">
 		<!-- <p>centro</p> -->
 		<div class="cicurloGrandre ciruloBackend circuloLateral">
 			<h5>Lenguajes generales y back-end</h5>
-			<div class="circulo" style="background:red">Java</div>
-			<div class="circulo" style="background:green">Python</div>
-			<div class="circulo" style="background:yellow">PHP</div>
-			<div class="circulo" style="background:orange">Kotlin</div>
-			<div class="circulo" style="background:blue">Nodejs</div>
+			<div class="circulo">
+				<img src="img/logo_java.png"/>
+			</div>
+			<div class="circulo">
+				<span>Python</span>
+				<img src="img/logo_java.png"/>
+			</div>
+			<div class="circulo">
+				<span>PHP</span>
+				<img src="img/logo_java.png"/>
+			</div>
+			<div class="circulo">
+				<span>Kotlin</span>
+				<img src="img/logo_java.png"/>
+			</div>
+			<div class="circulo">
+				<span>Nodejs</span>
+				<img src="img/logo_java.png"/>
+			</div>
 		</div>
 		<div class="cicurloGrandre circuloFronted">
 			<h5>Lenguajes front-end</h5>
-			<div class="circulo" style="background:red">HTML</div>
-			<div class="circulo" style="background:green">CSS</div>
-			<div class="circulo" style="background:yellow">JavaScript</div>
-			<div class="circulo" style="background:orange">TypeScript</div>
-			<div class="circulo" style="background:blue">Vue.js</div>
-			<div class="circulo" style="background:salmon">React.js</div>
-			<div class="circulo" style="background:black">jQuery</div>
-			<div class="circulo" style="background:black">Bootstrap</div>
+			<div class="circulo">
+				<img src="img/logo_html.png"/>
+				<span>HTML</span>
+			</div>
+			<div class="circulo">
+				<span>CSS</span>
+				<img src="img/logo_css.png"/>
+			</div>
+			<div class="circulo">
+				<span>JavaScript</span>
+				<img src="img/logo_JavaScript.png"/>
+			</div>
+			<div class="circulo">
+				<span></span>
+				<img src="img/logo_TypeScript.png"/>
+			</div>
+			<div class="circulo">
+				<span></span>
+				<img src="img/log_vue.js.png"/>
+			</div>
+			<div class="circulo">
+				<span></span>
+				<img src="img/logo_React.js.png"/>
+			</div>
+			<div class="circulo">
+				<span></span>
+				<img src="img/logo_jQuery.png"/>
+			</div>
+			<div class="circulo">
+				<span></span>
+				<img src="img/logo_bootstrap.png"/>
+			</div>
 		</div>
 		<div class="cicurloGrandre circuloDDBB circuloLateral">
 			<h5>Bases de datos y manejo de datos</h5>
-			<div class="circulo" style="background:red">SQL</div>
-			<div class="circulo" style="background:green">PL/SQL</div>
-			<div class="circulo" style="background:yellow">MongoDB</div>
-			<div class="circulo" style="background:orange">Firebase</div>
-			<div class="circulo" style="background:blue">JSON</div>
-			<div class="circulo" style="background:salmon">XML</div>
+			<div class="circulo">SQL</div>
+			<div class="circulo">
+				<span>PL</span>
+			/SQL</div>
+			<div class="circulo">
+				<span>MongoDB</span>
+				<img src="img/logo_java.png"/>
+			</div>
+			<div class="circulo">
+				<span>Firebase</span>
+				<img src="img/logo_java.png"/>
+			</div>
+			<div class="circulo">
+				<span>JSON</span>
+				<img src="img/logo_java.png"/>
+			</div>
+			<div class="circulo">
+				<span>XML</span>
+				<img src="img/logo_java.png"/>
+			</div>
 		</div>
 	</div>
 	<div class="extra">
@@ -141,8 +192,7 @@
 
 		for (let nombreCirculo in arrCirculos) {
 			const circles = document.querySelectorAll("." + nombreCirculo + " .circulo");
-			console.log(circles);
-			colocarDivCirculo(circles, arrCirculos[nombreCirculo], 150);
+			colocarDivCirculo(circles, arrCirculos[nombreCirculo], 175);
 		}
 
 		function colocarDivCirculo(cirulos, numCirculos, radio) {
