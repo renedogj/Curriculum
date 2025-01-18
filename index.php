@@ -20,7 +20,7 @@
 		<h1 class="h1-inicioNombre" id="h1-InicioNombre"></h1>
 		<!--<div class="div-inicioFoto"></div>-->
 	</div>
-	<div class="timeline">
+	<div class="timeline" id="timeline">
 		<div class="experiencia">
 			<div class="container experiencia-2">
 				<div class="content">
@@ -31,6 +31,16 @@
 						<li>Desarrollo de aplicaciones IOS y Android usando Ionic con Vue.js</li>
 						<li>Gestion de archivos JSON y bases de datos no relacionales con python</li>
 					</ul>
+					<div class="divTecnologias">
+						<span>JavaScript</span>
+						<span>Ionic</span>
+						<span>Vue.js</span>
+						<span>GitHub</span>
+						<span>JSON</span>
+						<span>Python</span>
+						<span>IOS</span>
+						<span>Android</span>
+					</div>
 				</div>
 			</div>
 			<div class="container experiencia-1">
@@ -50,6 +60,14 @@
 
 						<li>Realización de documentación de proyectos y realización y ejecución de planes de pruebas</li>
 					</ul>
+					<div class="divTecnologias">
+						<span>JavaScript</span>
+						<span>SAP UI5</span>
+						<span>SAP CAP</span>
+						<span>Git</span>
+						<span>JSON</span>
+						<span>SQL</span>
+					</div>
 				</div>
 			</div>
 			<div class="experiencia--1"></div>
@@ -60,6 +78,9 @@
 					<h3>Grado en Ciberseguridad</h3>
 					<h4>Universidad internacional de la Rioja (UNIR)</h4>
 					<p class="periodo">septiembre 2024 – Actualidad</p>
+					<div>
+						<span></span>
+					</div>
 				</div>
 			</div>
 			<div class="container formacion-3">
@@ -84,7 +105,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="lenguajesTecnologias">
+	<div class="divCirculosTecnologias">
 		<div class="cicurloGrandre circuloFronted circuloLateral">
 			<div class="circuloCentral">
 				<h5>Lenguajes front-end</h5>
