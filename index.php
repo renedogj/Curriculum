@@ -83,10 +83,10 @@
 		</div>
 	</div>
 	<div class="lenguajesTecnologias">
-		<!-- <p>centro</p> -->
 		<div class="cicurloGrandre ciruloBackend circuloLateral">
 			<h5>Lenguajes generales y back-end</h5>
 			<div class="circulo">
+				<span>Java</span>
 				<img src="img/logo_java.png"/>
 			</div>
 			<div class="circulo">
@@ -94,16 +94,16 @@
 				<img src="img/logo_java.png"/>
 			</div>
 			<div class="circulo">
+				<img src="img/logo_java.png"/>
 				<span>PHP</span>
-				<img src="img/logo_java.png"/>
 			</div>
 			<div class="circulo">
+				<img src="img/logo_java.png"/>
 				<span>Kotlin</span>
-				<img src="img/logo_java.png"/>
 			</div>
 			<div class="circulo">
-				<span>Nodejs</span>
 				<img src="img/logo_java.png"/>
+				<span>Nodejs</span>
 			</div>
 		</div>
 		<div class="cicurloGrandre circuloFronted">
@@ -113,55 +113,59 @@
 				<span>HTML</span>
 			</div>
 			<div class="circulo">
-				<span>CSS</span>
 				<img src="img/logo_css.png"/>
+				<span>CSS</span>
 			</div>
 			<div class="circulo">
-				<span>JavaScript</span>
 				<img src="img/logo_JavaScript.png"/>
+				<span>JavaScript</span>
 			</div>
 			<div class="circulo">
-				<span></span>
+				<span>TypeScript</span>
 				<img src="img/logo_TypeScript.png"/>
 			</div>
 			<div class="circulo">
-				<span></span>
 				<img src="img/log_vue.js.png"/>
+				<span>Vue.js</span>
 			</div>
 			<div class="circulo">
-				<span></span>
 				<img src="img/logo_React.js.png"/>
+				<span>React.js</span>
 			</div>
 			<div class="circulo">
-				<span></span>
 				<img src="img/logo_jQuery.png"/>
+				<span>jQuery</span>
 			</div>
 			<div class="circulo">
-				<span></span>
+				<span>Bootstrap</span>
 				<img src="img/logo_bootstrap.png"/>
 			</div>
 		</div>
 		<div class="cicurloGrandre circuloDDBB circuloLateral">
 			<h5>Bases de datos y manejo de datos</h5>
-			<div class="circulo">SQL</div>
 			<div class="circulo">
-				<span>PL</span>
-			/SQL</div>
+				<img src="img/logo_java.png"/>
+				<span>SQL</span>
+			</div>
 			<div class="circulo">
+				<img src="img/logo_java.png"/>
+				<span>PL_SQL</div>
+			</span>
+			<div class="circulo">
+				<img src="img/logo_java.png"/>
 				<span>MongoDB</span>
-				<img src="img/logo_java.png"/>
 			</div>
 			<div class="circulo">
+				<img src="img/logo_java.png"/>
 				<span>Firebase</span>
-				<img src="img/logo_java.png"/>
 			</div>
 			<div class="circulo">
+				<img src="img/logo_java.png"/>
 				<span>JSON</span>
-				<img src="img/logo_java.png"/>
 			</div>
 			<div class="circulo">
-				<span>XML</span>
 				<img src="img/logo_java.png"/>
+				<span>XML</span>
 			</div>
 		</div>
 	</div>
@@ -183,9 +187,6 @@
 		$(document).ready(() => {
 			typeWriter();
 		});
-
-		const n = 7;  // numero de circulos
-		const r = 150; // radio
 
 		let angulo = 0;
 		var arrCirculos = {"ciruloBackend": 5, "circuloFronted": 8, "circuloDDBB": 6 };

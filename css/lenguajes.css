@@ -6,7 +6,6 @@
 /*	height: auto;*/
 	display: flex;
 	justify-content: space-around;
-/*	align-items: flex-start	;*/
 	margin: auto;
 }
 
@@ -16,10 +15,8 @@
 	width: 200px;
 	height: 450px;
 /*	margin: auto;*/
-/*	align-self: flex-start;*/
 }
 
-/*.lenguajesTecnología p,*/
 .cicurloGrandre h5 {
 /*	background-color: purple;*/
 	position: absolute;
