@@ -6,6 +6,8 @@
 	<title>Javier Renedo</title>
 	<meta name=author content="Javier Renedo">
 
+	<meta http-equiv="refresh" content="1">
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
@@ -83,31 +85,10 @@
 		</div>
 	</div>
 	<div class="lenguajesTecnologias">
-		<div class="cicurloGrandre ciruloBackend circuloLateral">
-			<h5>Lenguajes generales y back-end</h5>
-			<div class="circulo">
-				<span>Java</span>
-				<img src="img/logo_java.png"/>
+		<div class="cicurloGrandre circuloFronted circuloLateral">
+			<div class="circuloCentral">
+				<h5>Lenguajes front-end</h5>
 			</div>
-			<div class="circulo">
-				<span>Python</span>
-				<img src="img/logo_java.png"/>
-			</div>
-			<div class="circulo">
-				<img src="img/logo_java.png"/>
-				<span>PHP</span>
-			</div>
-			<div class="circulo">
-				<img src="img/logo_java.png"/>
-				<span>Kotlin</span>
-			</div>
-			<div class="circulo">
-				<img src="img/logo_java.png"/>
-				<span>Nodejs</span>
-			</div>
-		</div>
-		<div class="cicurloGrandre circuloFronted">
-			<h5>Lenguajes front-end</h5>
 			<div class="circulo">
 				<img src="img/logo_html.png"/>
 				<span>HTML</span>
@@ -121,8 +102,8 @@
 				<span>JavaScript</span>
 			</div>
 			<div class="circulo">
-				<span>TypeScript</span>
 				<img src="img/logo_TypeScript.png"/>
+				<span>TypeScript</span>
 			</div>
 			<div class="circulo">
 				<img src="img/log_vue.js.png"/>
@@ -137,12 +118,39 @@
 				<span>jQuery</span>
 			</div>
 			<div class="circulo">
-				<span>Bootstrap</span>
 				<img src="img/logo_bootstrap.png"/>
+				<span>Bootstrap</span>
+			</div>
+		</div>
+		<div class="cicurloGrandre ciruloBackend">
+			<div class="circuloCentral">
+				<h5>Lenguajes generales y back-end</h5>
+			</div>
+			<div class="circulo">
+				<img src="img/logo_java.png"/>
+				<span>Java</span>
+			</div>
+			<div class="circulo">
+				<img src="img/logo_java.png"/>
+				<span>Python</span>
+			</div>
+			<div class="circulo">
+				<img src="img/logo_java.png"/>
+				<span>PHP</span>
+			</div>
+			<div class="circulo">
+				<img src="img/logo_java.png"/>
+				<span>Kotlin</span>
+			</div>
+			<div class="circulo">
+				<img src="img/logo_java.png"/>
+				<span>Nodejs</span>
 			</div>
 		</div>
 		<div class="cicurloGrandre circuloDDBB circuloLateral">
-			<h5>Bases de datos y manejo de datos</h5>
+			<div class="circuloCentral">
+				<h5>Bases de datos y manejo de datos</h5>
+			</div>
 			<div class="circulo">
 				<img src="img/logo_java.png"/>
 				<span>SQL</span>
@@ -188,7 +196,7 @@
 			typeWriter();
 		});
 
-		let angulo = 0;
+		let angulo = 300;
 		var arrCirculos = {"ciruloBackend": 5, "circuloFronted": 8, "circuloDDBB": 6 };
 
 		for (let nombreCirculo in arrCirculos) {
