@@ -62,7 +62,47 @@
 	text-align: center;
 }
 
-.extra{
+
+.certificaciones{
+	background-color: red;
+	width: 100%;
+	padding: 1%;
+}
+
+/*.certificaciones h3{
+	background-color: cyan;
+	text-align: center;
+	padding: 1%;
+	font-size: 1.5em;
+}*/
+
+.divContenedorCertificaciones{
+	width: 100%;
+/*	height: 500px;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.certificacion {
+	background-color: orange;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.certificacion * {
+	padding: 1%;
+}
+
+.certificacion img {
+	width: 50%;
+}
+
+.extra {
 	width: 100%;
 	height: 500px;
 }

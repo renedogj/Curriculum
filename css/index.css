@@ -52,6 +52,13 @@ body {
 	justify-self: center;
 }
 
+section h3 {
+	background-color: cyan;
+	text-align: center;
+	padding: 1%;
+	font-size: 1.5e
+}
+
 /*RRSS*/
 
 /*.div-inicio-RRSS{

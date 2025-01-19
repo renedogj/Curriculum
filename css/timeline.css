@@ -1,17 +1,32 @@
 .timeline {
+	background-color: black;
+	position: relative;
+	width: 100%;
+	padding: 0 1% 5% 1%;
+/*	height: 800px;*/
+/*	width: 60%;*/
+/*	max-width: 0 20%;*/
+/*	margin: 50px auto;*/
+/*	display: flex;*/
+/*	gap: 50px;*/
+/*	flex-direction: row;*/
+}
+
+.divContenedoraTimeline{
 	background-color: grey;
 	position: relative;
-	width: 60%;
-	max-width: 0 20%;
-	margin: 50px auto;
+	width: 75%;
+/*	height: 800px;*/
+/*	max-width: 0 20%;*/
+	margin: 1% auto;
+/*	margin-top: 50px;*/
 	display: flex;
 	gap: 50px;
 	flex-direction: row;
-	height: 800px;
 }
 
 /*linea del tiempo vertical*/
-.timeline::after {
+.divContenedoraTimeline::after {
 	content: '';
 	position: absolute;
 	width: 6px;
