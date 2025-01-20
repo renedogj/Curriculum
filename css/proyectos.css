@@ -1,106 +1,3 @@
-.divCirculosTecnologias{
-	background-color: purple;
-	position: relative;
-	width: 90%;
-	height: 700px;
-/*	height: auto;*/
-display: flex;
-justify-content: space-around;
-margin: auto;
-}
-
-.cicurloGrandre {
-/*	background-color: orange;*/
-position: relative;
-width: 200px;
-height: 450px;
-/*	margin: auto;*/
-}
-
-.circuloCentral {
-	background-color: red;
-	position: absolute;
-	width: 140px;
-	height: 140px;
-	border-radius:50%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	align-content: center;
-}
-
-.circuloCentral h5 {
-	text-align: center;
-}
-
-.circuloLateral {
-	top: 200px;
-}
-
-.circulo {
-	background-color: white;
-	position: absolute;
-	width: 120px;
-	height: 120px;
-/*	border-radius:50%;*/
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-display: flex;
-flex-direction: column;
-align-content: center;
-justify-self: center;
-}
-
-.circulo img {
-	position: relative;
-	width: 80%;
-	margin: auto;
-}
-
-.circulo span {
-	text-align: center;
-}
-
-
-.certificaciones{
-	background-color: red;
-	width: 100%;
-	padding: 1%;
-}
-
-/*.certificaciones h3{
-	background-color: cyan;
-	text-align: center;
-	padding: 1%;
-	font-size: 1.5em;
-}*/
-
-.divContenedorCertificaciones{
-	width: 100%;
-/*	height: 500px;*/
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-
-.certificacion {
-	background-color: orange;
-	width: 20%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.certificacion * {
-	padding: 1%;
-}
-
-.certificacion img {
-	width: 50%;
-}
-
 .proyectos {
 	background-color: brown;
 	width: 100%;
@@ -129,7 +26,7 @@ justify-content: center;
 		"img buttons";
 	border: solid 2px black;
 	border-radius: 10px;
-	align-items: stretch;
+	align-items: center;
 	padding: 1%;
 }
 
@@ -140,7 +37,8 @@ justify-content: center;
 	padding: 1%;
 }
 
-.proyecto img{
+.proyecto img.imgProyecto{
+	background-color: white;
 	grid-area: img;
 	width: 98%;
 	margin: 5% auto;
@@ -158,6 +56,7 @@ justify-content: center;
 .proyecto  .divButtonsProyecto{
 	background-color: blue;
 	grid-area: buttons;
+	align-self: end;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -231,4 +130,5 @@ justify-content: center;
 .proyecto .divButtonsProyecto a.aButtonIrCodigo .divContainerIcon img.icon {
 	width: 100%;
     height: auto;
+    filter: invert(1);
 }
