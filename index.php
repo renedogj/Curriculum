@@ -182,8 +182,8 @@
 			</div>
 			<div class="circulo">
 				<img src="img/logo_java.png"/>
-				<span>PL_SQL</div>
-			</span>
+				<span>PL_SQL</span>
+			</div>
 			<div class="circulo">
 				<img src="img/logo_java.png"/>
 				<span>MongoDB</span>
@@ -209,6 +209,73 @@
 				<img src="img/logo_microsoft_azure_fundamentals.png">
 				<h4>Microsoft azure fundamentals (az-900)</h4>
 				<p>Diciembre de 2024</p>
+			</div>
+		</div>
+	</section>
+	<section class="proyectos">
+		<h3>Mis proyectos</h3>
+		<div class="divContenedorProyectos">
+			<div class="proyecto">
+				<h4>Nombre Proyecto</h4>
+				<img src="img/logo_java.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="divButtonsProyecto">
+					<a class="aButtonIrProyecto">Ver proyecto →</a>
+					<a class="aButtonIrCodigo">
+						<div class="divContainerIcon">
+							<img src="img/codigo.png" class="icon">
+						</div>
+						Codigo
+					</a>
+				</div>
+			</div>
+			<div class="proyecto">
+				<h4>Nombre Proyecto</h4>
+				<img src="img/logo_java.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="divButtonsProyecto">
+					<a class="aButtonIrProyecto">Ver proyecto →</a>
+					<a class="aButtonIrCodigo">
+						<div class="divContainerIcon">
+							<img src="img/codigo.png" class="icon">
+						</div>
+						Codigo
+					</a>
+				</div>
+			</div>
+			<div class="proyecto">
+				<h4>Nombre Proyecto</h4>
+				<img src="img/logo_java.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="divButtonsProyecto">
+					<a class="aButtonIrProyecto">Ver proyecto →</a>
+					<a class="aButtonIrCodigo">
+						<div class="divContainerIcon">
+							<img src="img/codigo.png" class="icon">
+						</div>
+						Codigo
+					</a>
+				</div>
+			</div>
+			<div class="proyecto">
+				<h4>Nombre Proyecto</h4>
+				<img src="img/logo_java.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="divTecnologias">
+					<span>JavaScript</span>
+					<span>Git</span>
+					<span>JSON</span>
+					<span>SQL</span>
+				</div>
+				<div class="divButtonsProyecto">
+					<a class="aButtonIrProyecto">Ver proyecto →</a>
+					<a class="aButtonIrCodigo">
+						<div class="divContainerIcon">
+							<img src="img/codigo.png" class="icon">
+						</div>
+						Codigo
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
