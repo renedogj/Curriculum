@@ -33,12 +33,12 @@ height: 450px;
 	text-align: center;
 }
 
-.circuloLateral {
+.circuloGrandeLateral {
 	top: 200px;
 }
 
 .circulo {
-	background-color: white;
+/*	background-color: white;*/
 	position: absolute;
 	width: 120px;
 	height: 120px;

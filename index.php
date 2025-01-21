@@ -22,10 +22,10 @@
 		<!--<div class="div-inicioFoto"></div>-->
 	</section>
 	<?php
-	include "controllers/timeline.html";
-	include "controllers/tecnologias.html";
-	include "controllers/certificaciones.html";
-	include "controllers/proyectos.html";
+	include "views/timeline.html";
+	include "views/tecnologias.html";
+	include "views/certificaciones.html";
+	include "views/proyectos.html";
 	?>
 	
 	<section class="extra">
@@ -48,7 +48,7 @@
 		});
 
 		let angulo = 300;
-		var arrCirculos = {"ciruloBackend": 5, "circuloFronted": 8, "circuloDDBB": 6 };
+		var arrCirculos = {"ciruloBackend": 5, "circuloFronted": 8, "circuloDDBB": 7 };
 
 		for (let nombreCirculo in arrCirculos) {
 			const circles = document.querySelectorAll("." + nombreCirculo + " .circulo");
