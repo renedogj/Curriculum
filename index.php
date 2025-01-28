@@ -17,9 +17,10 @@
 	<link rel="stylesheet" type="text/css" href="css/proyectos.css">
 </head>
 <body>
+	<div id="particles-js" class="divBackgroundParticles"></div>
 	<section class="div-inicio">
 		<h1 class="h1-inicioNombre" id="h1-InicioNombre"></h1>
-		<!--<div class="div-inicioFoto"></div>-->
+		
 	</section>
 	<?php
 	include "views/timeline.html";
@@ -29,9 +30,15 @@
 	?>
 	
 	<section class="extra">
-
+		
 	</section>
+
+	<script src="libs/particles.js"></script>
 	<script type="text/javascript">
+		particlesJS.load("particles-js", "libs/particles.json", function() {
+			console.log("particles.js loaded - callback");
+		});
+
 		var i = 0;
 		var txt = "Javier Renedo";
 

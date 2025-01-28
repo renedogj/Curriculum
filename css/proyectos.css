@@ -1,11 +1,12 @@
 .proyectos {
 	background-color: brown;
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	padding: 1%;
 }
 
 .divContenedorProyectos {
-	background-color: yellowgreen;
+	background-color: yellow;
 	position: relative;
 	width: 85%;
 	margin: 2% auto;
