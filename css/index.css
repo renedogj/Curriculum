@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 /*	background-color: #f4f4f4;*/
-	background-color: red;
+background-color: red;
 }
 
 .divBackgroundParticles{
@@ -33,15 +33,29 @@ body {
 	grid-template-areas: 
 		"barraSuperior barraSuperior"
 		"titulo imagen";*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+/*    align-content: center;*/
+/*    flex-direction: column;*/
+}
+
+.divContenedoInicio{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+/*    align-content: center;*/
+flex-direction: column;
 }
 
 .h1-inicioNombre{
+	width: 100%;
+	text-align: center;
 	font-size: 5em;
 	font-family: Century;
+
 }
 
 .div-skills{
@@ -72,58 +86,79 @@ section h3 {
 
 /*RRSS*/
 
-/*.div-inicio-RRSS{
+.div-inicio-RRSS{
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
 }
 
-.div-facebook, .div-instagram{
+.div-inicio-RRSS a {
+	text-decoration: none !important;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2px;
+	margin-right: 20px;
+	font-size: 20px;
+	overflow: hidden;
 	position: relative;
-	padding: 3%;
+	color: green; 
+	border: 2px solid orange;
+	transition: all 0.2s linear 0s;
+	
+	
 }
 
-.a-facebook, .a-instagram{
-	font-size: 10px;
-	padding: 1em;
-	border-radius: 50%;
-	margin: 0;
-	box-shadow: none;
-	text-decoration: none;
-	background-color: #3b5998;
-	text-align: center;
-	cursor: pointer;
+.div-inicio-RRSS  a i {
+	position: relative;
+	z-index: 3;
+}
+
+.div-inicio-RRSS a &:last-child {
+	margin-right: 0px;
+}
+
+.div-inicio-RRSS a &:before {
+	content: "";
 	display: inline-block;
-	line-height: 1;
+	height: 100%;
+	vertical-align: middle;
 }
 
-.span-facebook, .span-instagram{
-	box-sizing: border-box;
-	position: absolute;
-	clip: rect(0,0,0,0);
-	border: 0;
-	font-size: 10px;
+.div-inicio-RRSS a i {
+	display: inline-block;
+	vertical-align: middle;
 }
 
-.i-facebook, .i-instagram{
-	width: 1em;
-	height: 1em;
-	display: block;
-	-webkit-font-smoothing: antialiased;
-	box-sizing: border-box;
-	cursor: pointer;
-	word-break: break-word;
+.div-inicio-RRSS a {
+	
+	&:after {
+		content: "";
+		display: block;
+		width: 90%;
+		height: 90%;
+		top: -110%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		position: absolute;
+		background-color: white;
+		border-radius: purple;
+	}
+	
+	&:hover {
+		color: black;
+		
+		&:after {
+			top: 5%;
+			transition: all 0.2s linear 0s;
+		}
+	}
+}
 }
 
-.a-facebook{
-	background-image: url("../img/facebook-svgrepo-com.svg");
-	background-repeat: no-repeat;
-}
-
-.a-instagram{
-	background-image: url("../img/iconfinder_instagram_2142569.png");
-	background-repeat: no-repeat;
-}*/
 
 .div-inicioFoto{
 	/*background-repeat: no-repeat;
@@ -131,7 +166,7 @@ section h3 {
 	/*background-size: 150%;
 	grid-area: imagen;*/
 }
-	
+
 /*.div-inicio{
 	background-color: rgba(50,50,50,0.5);
 	position: relative;

@@ -10,17 +10,23 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/timeline.css">
 	<link rel="stylesheet" type="text/css" href="css/tecnologiaYCertificaciones.css">
 	<link rel="stylesheet" type="text/css" href="css/proyectos.css">
+
 </head>
 <body>
 	<div id="particles-js" class="divBackgroundParticles"></div>
 	<section class="div-inicio">
-		<h1 class="h1-inicioNombre" id="h1-InicioNombre"></h1>
-		
+		<div class="divContenedoInicio">
+			<h1 class="h1-inicioNombre" id="h1-InicioNombre"></h1>
+			<div class="div-inicio-RRSS">
+				<a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			</div>
+		</div>
 	</section>
 	<?php
 	include "views/timeline.html";
