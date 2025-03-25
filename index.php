@@ -25,16 +25,24 @@
 			<h1 class="h1-inicioNombre" id="h1-InicioNombre"></h1>
 			<h3 class="h3-inicio">Desarrollador FullStack - Experto en Ciberseguridad</h3>
 			<div class="div-inicio-RRSS">
-				<a href="https://www.linkedin.com/in/javierrenedogonzalez/" class="in" title="Join us on Linked In" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-				<a href="https://github.com/renedogj" class="in" title="Join us on Linked In" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+				<a 
+					href="https://www.linkedin.com/in/javierrenedogonzalez/" title="Linkedin" target="_blank">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
+				<a href="https://github.com/renedogj" title="Github" target="_blank">
+					<i class="fa fa-github" aria-hidden="true"></i>
+				</a>
+				<a href="files/cv_Javier_Renedo.pdf" class="pdfcv" title="Curriculum" target="_blank">
+					<i class="fa" aria-hidden="true">CV</i>
+				</a>
 			</div>
 		</div>
 	</section>
 	<?php
 	include "views/timeline.html";
-	include "views/tecnologias.html";
 	include "views/certificaciones.html";
-	include "views/proyectos.html";
+	include "views/tecnologias.html";
+	// include "views/proyectos.html";
 	?>
 	
 	<section class="extra">
