@@ -1,0 +1,291 @@
+.contactame{
+	position: relative;
+	width: 40%;
+	height: auto;
+	margin: auto;
+	color: #e0e2e9 !important;
+}
+
+.button-contactame{
+	background-color: rgba(158,158,158,0.8);
+	position: relative;
+	width: 100%;
+	padding: 3% 8%;
+	margin: 5% 0 10%;
+	text-align: center;
+	font-size: 2.6em;
+	font-weight: bold;
+	font-family: Century Gothic;
+/*	color: black;*/
+	border-radius: 15px;
+    text-decoration: none;	
+    outline: none;
+    border:none;
+    box-shadow: 3px 5px 4px 0 #899599;
+}
+
+.button-contactame:hover{
+	background-color: rgba(188,188,188,0.8);
+}
+
+.button-contactame:active{
+	box-shadow: 0px 0px 0px 0px #999;
+  	top: 7px;
+  	left: 4px;
+}
+
+.div-contactame-general{
+/*	background-color: #F2F2F2;*/
+	position: relative;
+	width: 100%;
+	width: 98%;
+	margin: 0 1% 1%;
+	padding: 2% 7% 3% 7%;
+	border-radius: 25px;
+/*	font-family: Century Gothic;*/
+	display: none;
+}
+
+.div-contactame-contenedora{
+	position: relative;
+	width: 100%;
+	padding: 2%;
+}
+
+.p-contactame{
+	padding: 1% 2%;
+	font-size: 2em;
+	margin: 0 0 1% 0;
+}
+
+.div-contactame-contenedora input{
+	position: relative;
+	width: 100%;
+	padding: 1%;
+	font-size: 1em;
+	margin: 1% 0;
+	font-family: Century Gothic;
+}
+
+.div-contactame-nombreEmpresa{
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+
+.div-contactame-nombre{
+	position: relative;
+	width: 50%;
+	padding: 0 1% 0 0;
+}
+
+.div-contactame-empresa{
+	position: relative;
+	width: 50%;
+	padding: 0 0 0 1%;
+}
+
+.div-contactame-nombreEmpresa label{
+	padding: 1%;
+	margin: 2% 0;
+	font-size: 1.3em;
+}
+
+.div-contactame-nombreEmpresa input{
+	position: relative;
+	width: 100%;
+	padding: 2%;
+	font-size: 1em;
+	margin: 1% 0;
+}
+
+.div-contactame-contenedora label{
+	position: relative;
+	width: 100%;
+	padding: 1%;
+	margin: 2% 0;
+	font-size: 1.3em;
+}
+
+.div-contactame-contenedora select{
+	position: relative;
+	width: 100%;
+	padding: 1%;	
+	margin: 1% 0;
+	font-size: 0.9em;
+	font-family: Century Gothic;
+}
+
+.div-contactame-contenedora textarea{
+	position: relative;
+	width: 100%;
+	padding: 1%;
+	margin: 1% 0;
+}
+
+.contactame-enviar{
+	position: relative;
+	width: 20%;
+	margin: 1% 40%;
+}
+
+.contactame-enviar input{
+	position: relative;
+	width: 100%;
+	padding: 5%;
+	font-size: 1.2em;
+	font-weight: bold;
+	box-shadow: 3px 4px 3px 0 #899599;
+	background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #e3dfe3;
+}
+
+.contactame-enviar input:hover{
+	background: linear-gradient(to bottom, #E6E7E7 5%, #D9D9D8 100%);
+	background-color: #f6f6f6;
+}
+
+.contactame-enviar input:active{
+	box-shadow: 0 0 0 0 #899599;
+	top: 2px;
+	right: -2px;
+}
+
+/*@media(max-width: 1460px){
+	.contactame{
+		width: 45%;
+	}
+	.button-contactame{
+		font-size: 2.3em;
+	}
+}
+
+@media(max-width: 1310px){
+	.p-contactame{
+		padding: 1% 2% 1% 1%;
+		font-size: 1.7em;
+	}
+}
+
+@media(max-width: 1150px){
+	.contactame{
+		width: 47%;
+	}
+}
+
+@media(max-width: 1100px){
+	.p-contactame{
+		padding: 1% 4% 1% 1%;
+		font-size: 1.6em;
+	}
+}
+	
+@media(max-width: 1050px){
+	.contactame{
+		width: 49%;
+	}
+	.button-contactame{
+		font-size: 2.1em;
+	}
+}
+
+@media(max-width: 900px){
+	.p-contactame{
+		padding: 1% 2% 1% 1%;
+		font-size: 1.5em;
+	}
+	.contactame{
+		width: 54%;
+	}
+	.button-contactame{
+		font-size: 1.9em;
+		padding: 4% 8%;
+	}
+}
+
+@media(max-width: 750px){
+	.contactame{
+		width: 57%;
+	}
+	.button-contactame{
+		font-size: 1.7em;
+	}
+}
+
+@media(max-width: 700px){
+	.p-contactame{
+		font-size: 1.4em;
+	}
+}
+
+@media(max-width: 600px){
+	.p-contactame{
+		font-size: 1.3em;
+	}
+	.div-contactame-contenedora label{
+		font-size: 1.1em;
+	}
+	.div-contactame-nombreEmpresa input{
+		padding: 2% 5%;
+		font-size: 1em;
+	}
+	.contactame-enviar{
+		width: 30%;
+		margin: 1% 35%;
+	}
+	.contactame-enviar input{
+		font-size: 1.1em;
+	}
+	.contactame{
+		width: 60%;
+	}
+	.button-contactame{
+		font-size: 1.5em;
+	}
+}
+
+@media(max-width: 450px){
+	.contactame{
+		width: 63%;
+	}
+	.button-contactame{
+		font-size: 1.4em;
+	}
+}
+
+@media(max-width: 400px){
+	.p-contactame{
+		font-size: 1.2em;
+	}
+	.div-contactame-contenedora label{
+		font-size: 1em;
+	}
+	.div-contactame-nombreEmpresa input{
+		font-size: 0.9em;
+	}
+
+	.contactame-enviar{
+		width: 45%;
+		margin: 1% 30%;
+	}
+	.contactame-enviar input{
+		font-size: 1em;
+	}
+}
+
+@media(max-width: 350px){
+	.contactame{
+		width: 63%;
+	}
+	.button-contactame{
+		font-size: 1.2em;
+	}
+}
+
+@media(max-width: 300px){
+	.button-contactame{
+		font-size: 0.9em;
+	}
+}*/
