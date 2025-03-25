@@ -23,7 +23,7 @@
 	<section class="div-inicio">
 		<div class="divContenedoInicio">
 			<h1 class="h1-inicioNombre" id="h1-InicioNombre"></h1>
-			<h3 class="h3-inicio">Desarrollador fullStack - Experto en Ciberseguridad</h3>
+			<h3 class="h3-inicio">Desarrollador FullStack - Experto en Ciberseguridad</h3>
 			<div class="div-inicio-RRSS">
 				<a href="https://www.linkedin.com/in/javierrenedogonzalez/" class="in" title="Join us on Linked In" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				<a href="https://github.com/renedogj" class="in" title="Join us on Linked In" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>

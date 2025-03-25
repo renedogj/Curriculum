@@ -141,33 +141,3 @@
 	padding: 6px 12px;
 	border-radius: 25px
 }
-
-
-/*@media screen and (max-width: 768px) {
-	.timeline {
-		grid-template-columns: 1fr;
-		gap: 10px;
-	}
-	.container {
-		width: 100%;
-		left: 0;
-		grid-column: 1 / 2;
-		text-align: left;
-	}
-
-	.container.right {
-		left: 0;
-	}
-
-	.timeline::after {
-		left: 20px;
-	}
-
-	.timeline::before {
-		display: none;
-	}
-
-	.container::after {
-		left: 15px;
-	}
-}*/
