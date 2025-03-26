@@ -24,7 +24,8 @@
 	<section class="div-inicio">
 		<div class="divContenedoInicio">
 			<h1 class="h1-inicioNombre" id="h1-InicioNombre"></h1>
-			<h3 class="h3-inicio">Desarrollador FullStack - Experto en Ciberseguridad</h3>
+			<h3 class="h3-inicio h3-inicio-ordenador">Desarrollador FullStack - Experto en Ciberseguridad</h3>
+			<h3 class="h3-inicio h3-inicio-movil">Desarrollador FullStack <br/> Experto en Ciberseguridad</h3>
 			<div class="div-inicio-RRSS">
 				<a 
 					href="https://www.linkedin.com/in/javierrenedogonzalez/" title="Linkedin" target="_blank">
@@ -46,8 +47,6 @@
 	// include "views/proyectos.html";
 	include "views/contactame.html";
 	?>
-	
-	<!-- <section class="extra"></section> -->
 
 	<script src="libs/particles.js"></script>
 	<script type="text/javascript">

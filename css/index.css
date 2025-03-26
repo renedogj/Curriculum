@@ -9,14 +9,13 @@ body {
 	background-color: #17202a;
 }
 
-.divBackgroundParticles{
+.divBackgroundParticles {
 	position: fixed;
 	width: 100%;
 	height: 100%;
 }
 
-
-.div-inicio{
+.div-inicio {
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -25,7 +24,7 @@ body {
 	position: relative;
 }
 
-.divContenedoInicio{
+.divContenedoInicio {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -34,8 +33,9 @@ body {
 	flex-direction: column;
 }
 
-.h1-inicioNombre{
-	width: 100%;
+.h1-inicioNombre {
+	width: 80%;
+	margin: 0 10%;
 	text-align: center;
 	font-size: 6em;
 	font-family: Century;
@@ -43,14 +43,20 @@ body {
 }
 
 .h3-inicio {
+	width: 70%;
+	margin: 0 15%;
 	text-align: center;
 	font-family: Century;
 	color: #e0e2e9;
 	padding: 0.5%;
-    font-size: 1.3em;
+	font-size: 1.3em;
 }
 
-.div-skills{
+.h3-inicio-movil {
+	display: none;
+}
+
+.div-skills {
 	width: 100%;
 	padding: 1%;
 	display: grid;
@@ -58,14 +64,14 @@ body {
 	grid-template-areas: "h1 h1 h1 h1 h1";
 }
 
-.div-skills .h1-tituloSkills{
+.div-skills .h1-tituloSkills {
 	grid-area: h1;
 	text-align: center;
 	padding: 1%;
 	margin: 1%;
 }
 
-.div-contenerdor-skill{
+.div-contenerdor-skill {
 	justify-self: center;
 }
 
@@ -75,18 +81,18 @@ section h3 {
 	font-size: 1.5em;
 }
 
-.h3-title{
+.h3-title {
 	font-family: Century;
 	color: #e0e2e9;
 	font-size: 2rem;
 }
 
 /*RRSS*/
-
-.div-inicio-RRSS{
+.div-inicio-RRSS {
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
+	gap: 20px;
 	padding: 0.5%;
 }
 
@@ -97,7 +103,6 @@ section h3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-right: 20px;
 	font-size: 20px;
 	overflow: hidden;
 	position: relative;
@@ -149,17 +154,51 @@ section h3 {
 	}
 
 	&:hover i {
-	color: #2c2c2c;
+		color: #2c2c2c;
 	}
 }
 
-.pdfcv i{
+.pdfcv i {
 	font-family: Arial;
 	font-weight: bold;
-    font-size: 0.9em;
+	font-size: 0.9em;
 }
 
-.extra {
-	width: 100%;
-	height: 500px;
+@media(max-width: 900px) {
+	.h1-inicioNombre {
+		font-size: 5em;
+	}
+	.h3-inicio {
+		width: auto;
+		margin: 2% auto 3%;
+	}
+}
+
+@media(max-width: 600px) {
+	.h1-inicioNombre {
+		font-size: 4em;
+	}
+	.h3-inicio {
+		font-size: 1.2em;
+		width: auto;
+		margin: 2% auto 4%;
+	}
+
+	.h3-inicio-movil{
+		display: flex;
+	}
+
+	.h3-inicio-ordenador{
+		display: none;
+	}
+}
+
+@media(max-width: 400px) {
+	.h1-inicioNombre {
+		font-size: 3.5em;
+	}
+	.h3-inicio {
+		font-size: 1.1em;
+		margin: 2% auto 5%;
+	}
 }
