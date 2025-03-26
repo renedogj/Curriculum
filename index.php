@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/timeline.css">
 	<link rel="stylesheet" type="text/css" href="css/tecnologiaYCertificaciones.css">
 	<link rel="stylesheet" type="text/css" href="css/proyectos.css">
+	<link rel="stylesheet" type="text/css" href="css/contactame.css">
 
 </head>
 <body>
@@ -43,11 +44,10 @@
 	include "views/certificaciones.html";
 	include "views/tecnologias.html";
 	// include "views/proyectos.html";
+	include "views/contactame.html";
 	?>
 	
-	<section class="extra">
-		
-	</section>
+	<!-- <section class="extra"></section> -->
 
 	<script src="libs/particles.js"></script>
 	<script type="text/javascript">
@@ -86,6 +86,33 @@
 				element.style.top = `${originY + radio*Math.sin(angulo + 2*Math.PI/numCirculos*i)}px`;
 			});
 		}
+
+
+		$("#formularioEnviarCorreo").submit(() => {
+			if($("#formularioEnviarCorreo").valid()){
+				var datosCorreo = {};
+
+				datosCorreo["nombre"] = $("#nombre").val();
+				datosCorreo["empresa"] = $("#empresa").val();
+				datosCorreo["email"] = $("#email").val();
+				datosCorreo["mensaje"] = $("#mensaje").val();
+				$.ajax({
+					method: "POST",
+					url: "models/enviarCorreo.php",
+					data: datosCorreo,
+					success: function(result){
+						if(result == "true"){
+							$("#modalEnviado").show();
+							$("#formularioEnviarCorreo").trigger("reset");
+						}else{
+							$("#modalErrorEnviado").show();
+						}
+					},
+					dataType: "text"
+				});
+			}
+	return false;
+})
 	</script>
 </body>
 </html>
