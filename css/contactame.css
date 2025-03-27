@@ -11,6 +11,8 @@
 	width: 60%;
 	margin: auto;
 	padding: 2%;
+	display: flex;
+	flex-direction: column;
 }
 
 .div-contactame-contenedora .h3-title {
@@ -60,7 +62,6 @@
 
 .div-contactame-contenedora label{
 	position: relative;
-	width: 100%;
 	padding: 1%;
 	margin: 2% 0;
 	font-size: 1.3em;
@@ -73,14 +74,20 @@
 	margin: 1% 0;
 	font-size: 1em;
 	font-family: Century Gothic;
+	border: solid 1px #2c2c2c;
+	border-radius: 10px;
+	box-shadow: 3px 4px 1px 0 rgba(0,0,0,0.75);
 }
 
 .div-contactame-nombreEmpresa label{
+	padding: 2%;
+	margin: 4% 0;
 	font-size: 1.3em;
 }
 
 .div-contactame-nombreEmpresa input{
 	padding: 2%;
+    margin: 2% 0;
 }
 
 .div-contactame-contenedora textarea{
@@ -90,6 +97,8 @@
 	margin: 1% 0;
 	font-size: 1em;
 	font-family: Century Gothic;
+	border: solid 1px #2c2c2c;
+	border-radius: 10px;
 }
 
 .contactame-enviar{
@@ -112,7 +121,7 @@
 		rgba(214,214,214,1) 100%
 	);
 	border-radius: 10px;
-	border: 1px solid #e3dfe3;
+	border: 1px solid #2c2c2c;
 }
 
 .contactame-enviar input:hover{
@@ -127,6 +136,11 @@
 	box-shadow: 0 0 0 0 #899599;
 	top: 2px;
 	right: -2px;
+}
+
+label.error{
+	font-size: 1em;
+	color: #DE0006;
 }
 
 @media(max-width: 1700px){

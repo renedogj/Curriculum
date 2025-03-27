@@ -9,23 +9,25 @@
 			<form method="POST" id="formularioEnviarCorreo">
 				<div class="div-contactame-nombreEmpresa">
 					<div class="div-contactame-nombre">
-						<label for="nombre">Nombre:</label><br>
+						<label for="nombre">Nombre:</label>
 						<input type="text" name="nombre" id="nombre" placeholder="Nombre" required/>
-						<label id="nombre-error" class="error" for="nombre"></label><br>
+						<label id="nombre-error" class="error" for="nombre"></label>
 					</div>
 					<div class="div-contactame-empresa">
-						<label for="empresa">Empresa:</label><br>
+						<label for="empresa">Empresa:</label>
 						<input type="text" name="empresa" id="empresa" placeholder="Empresa"/>
-						<label id="empresa-error" class="error" for="empresa"></label><br>
 					</div>
 				</div>
-				
-				<label for="email">E-mail:</label>
-				<input type="email" name="email" id="email"  placeholder="E-mail" required/>
-				<label id="email-error" class="error" for="email"></label><br>
-				
-				<textarea class="form-control" id="mensaje" name="mensaje" rows="10" placeholder="Escribe tu mensaje" required></textarea>
-				<label id="mensaje-error" class="error" for="mensaje"></label>
+				<div class="div-contactame-email">
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" id="email"  placeholder="E-mail" required/>
+					<label id="email-error" class="error" for="email"></label>
+				</div>
+				<div class="div-contactame-mensaje">
+					<label for="email">Mensaje:</label>
+					<textarea class="form-control" id="mensaje" name="mensaje" rows="10" placeholder="Escribe tu mensaje" required></textarea>
+					<label id="mensaje-error" class="error" for="mensaje"></label>	
+				</div>
 				<div class="contactame-enviar">
 					<input type="submit" id="bttnEnviarCorreo" value="Enviar"/>
 				</div>
