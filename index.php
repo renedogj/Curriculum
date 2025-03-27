@@ -101,17 +101,17 @@
 					data: datosCorreo,
 					success: function(result){
 						if(result == "true"){
-							$("#modalEnviado").show();
+							alert("Correo enviado con éxito");
 							$("#formularioEnviarCorreo").trigger("reset");
 						}else{
-							$("#modalErrorEnviado").show();
+							alert("Se ha producido un error al enviar el correo");
 						}
 					},
 					dataType: "text"
 				});
 			}
-	return false;
-})
+			return false;
+		});
 	</script>
 </body>
 </html>
