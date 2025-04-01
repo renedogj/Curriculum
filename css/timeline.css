@@ -17,6 +17,10 @@
 	flex-direction: row;
 }
 
+.timelineMovil {
+	display: none;
+}
+
 /*linea del tiempo vertical*/
 .divContenedoraTimeline::after {
 	content: '';
@@ -43,9 +47,9 @@
 }
 
 .container {
-	padding: 2.5% 5%;
-	position: relative;
 	background-color: #ecf0f1;
+	position: relative;
+	padding: 2.5% 5%;
 	border-radius: 8px;
 }
 
@@ -144,4 +148,107 @@
 	font-size: 0.9rem;
 	padding: 6px 12px;
 	border-radius: 25px
+}
+
+@media(max-width: 1700px){
+	.divContenedoraTimeline{
+		width: 80%;
+	}
+}
+
+@media(max-width: 1200px){
+	.timeline{
+		width: 85%;
+	}
+
+	.divContenedoraTimeline{
+		width: 85%;
+	}
+}
+
+@media(max-width: 900px){
+	.timeline{
+		width: 95%;
+	}
+	.timeline .h3-title{
+		padding: 3% 0 1.5%;
+	}
+	.divContenedoraTimeline{
+		width: 90%;
+	}
+	.container{
+		padding: 1% 3%;
+	}
+	.experiencia .container::before,
+	.formacion .container::before {
+		top: 15px;
+	}
+	
+	.divContenedoraTimeline h3{
+		font-size: 1.4em;
+	}
+	.empresa,
+	.institucion,
+	.periodo {
+		margin: 0.5% 0;
+		font-size: 0.95em;
+	}
+	.divTecnologias span,
+	.ulDescripcion{
+		font-size: 0.85em;
+	}
+}
+
+@media(max-width: 600px){
+	.timeline{
+		width: 90%;
+	}
+	.divContenedoraTimeline{
+		width: 85%;
+	}
+
+	.timelineMovil {
+		display: flex;
+	}
+
+	.timelineOrdenador {
+		display: none;
+	}
+
+	.divContenedoraTimeline::after {
+		left: 0;
+	}
+
+	.experienciaYFormacion {
+		width:	 95%;
+		display: flex;
+		flex-direction: column;
+		margin-left: 25px;
+		gap: 20px;
+	}
+
+	.experienciaYFormacion .container::before,
+	.experienciaYFormacion .container::before {	
+		top: 15px;
+		left: -22px;
+		border-right: 22px solid #ecf0f1;
+	}
+}
+
+@media(max-width: 400px){
+	.timeline{
+		width: 95%;
+	}
+	.divContenedoraTimeline{
+		width: 90%;
+	}
+}
+
+@media(max-width: 300px){
+	.timeline{
+		width: 95%;
+	}
+	.divContenedoraTimeline{
+		width: 95%;
+	}
 }

@@ -41,9 +41,9 @@
 		</div>
 	</section>
 	<?php
-	// include "views/timeline.html";
-	// include "views/certificaciones.html";
-	// include "views/tecnologias.html";
+	include "views/timeline.html";
+	include "views/certificaciones.html";
+	include "views/tecnologias.html";
 	// include "views/proyectos.html";
 	include "views/contactame.html";
 	?>
@@ -69,22 +69,22 @@
 			typeWriter();
 		});
 
-		// let angulo = 300;
-		// var arrCirculos = {"ciruloBackend": 5, "circuloFronted": 8, "circuloDDBB": 7 };
+		let angulo = 300;
+		var arrCirculos = {"ciruloBackend": 5, "circuloFronted": 8, "circuloDDBB": 7 };
 
-		// for (let nombreCirculo in arrCirculos) {
-		// 	const circles = document.querySelectorAll("." + nombreCirculo + " .circulo");
-		// 	colocarDivCirculo(circles, arrCirculos[nombreCirculo], 175);
-		// }
+		for (let nombreCirculo in arrCirculos) {
+			const circles = document.querySelectorAll("." + nombreCirculo + " .circulo");
+			colocarDivCirculo(circles, arrCirculos[nombreCirculo], 175);
+		}
 
-		// function colocarDivCirculo(cirulos, numCirculos, radio) {
-		// 	let originX = cirulos[0].offsetLeft;
-		// 	let originY = cirulos[0].offsetTop;
-		// 	cirulos.forEach((element,i) => {
-		// 		element.style.left = `${originX + radio*Math.cos(angulo + 2*Math.PI/numCirculos*i)}px`;
-		// 		element.style.top = `${originY + radio*Math.sin(angulo + 2*Math.PI/numCirculos*i)}px`;
-		// 	});
-		// }
+		function colocarDivCirculo(cirulos, numCirculos, radio) {
+			let originX = cirulos[0].offsetLeft;
+			let originY = cirulos[0].offsetTop;
+			cirulos.forEach((element,i) => {
+				element.style.left = `${originX + radio*Math.cos(angulo + 2*Math.PI/numCirculos*i)}px`;
+				element.style.top = `${originY + radio*Math.sin(angulo + 2*Math.PI/numCirculos*i)}px`;
+			});
+		}
 
 
 		$("#formularioEnviarCorreo").submit(() => {

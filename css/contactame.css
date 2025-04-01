@@ -76,7 +76,7 @@
 	font-family: Century Gothic;
 	border: solid 1px #2c2c2c;
 	border-radius: 10px;
-	box-shadow: 3px 4px 1px 0 rgba(0,0,0,0.75);
+	box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.75);
 }
 
 .div-contactame-nombreEmpresa label{
@@ -99,6 +99,7 @@
 	font-family: Century Gothic;
 	border: solid 1px #2c2c2c;
 	border-radius: 10px;
+	box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.75);
 }
 
 .contactame-enviar{
