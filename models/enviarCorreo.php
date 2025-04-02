@@ -24,9 +24,9 @@ $mail->Password = $pwd;
 $mail->SMTPAutoTLS = false;
 
 $mail->From = $emailFrom;
-$mail->FromName = "";
+$mail->FromName = "CV - WEB Javier Renedo";
 $mail->addReplyTo($email);
-$mail->AddAddress($emailFrom);
+$mail->AddAddress("renedogj@gmail.com");
 
 $mail->Subject = $asunto;
 $mail->isHTML(true);

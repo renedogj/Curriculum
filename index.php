@@ -52,6 +52,6 @@
 	<script src="libs/particles.js"></script>
 	<script src="controllers/index.js"></script>
 	<script src="controllers/circulos.js"></script>
-	<script src="controllers/correos.js"></script>
+	<script src="controllers/correo.js"></script>
 </body>
 </html>
