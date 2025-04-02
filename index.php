@@ -44,9 +44,9 @@
 	<?php
 	include "views/timeline.html";
 	include "views/certificaciones.html";
-	// include "views/tecnologias.html";
+	include "views/tecnologias.html";
 	// include "views/proyectos.html";
-	include "views/contactame.html";
+	// include "views/contactame.html";
 	?>
 
 	<script src="libs/particles.js"></script>
@@ -68,24 +68,66 @@
 
 		$(document).ready(() => {
 			typeWriter();
+			if($(window).width() > 800){
+				colorcarCirculos(170);
+			}else if($(window).width() > 600){
+				colorcarCirculos(150);
+			}else if($(window).width() > 500){
+				colorcarCirculos(160);
+			}else if($(window).width() > 400){
+				colorcarCirculos(140);
+			}else {
+				colorcarCirculos(110);
+			}
 		});
 
+
 		let angulo = 300;
-		var arrCirculos = {"ciruloBackend": 5, "circuloFronted": 8, "circuloDDBB": 7 };
+		var arrCirculos = {
+			"ciruloBackend": {
+				numCirculos: 5
+			},
+			"circuloFronted": {
+				numCirculos: 8
+			},
+			"circuloDDBB": {
+				numCirculos: 7
+			}
+		};
 
 		for (let nombreCirculo in arrCirculos) {
-			const circles = document.querySelectorAll("." + nombreCirculo + " .circulo");
-			colocarDivCirculo(circles, arrCirculos[nombreCirculo], 175);
+			const cirulos = document.querySelectorAll("." + nombreCirculo + " .circulo");
+			arrCirculos[nombreCirculo].originX = cirulos[0].offsetLeft;
+			arrCirculos[nombreCirculo].originY = cirulos[0].offsetTop;
 		}
 
-		function colocarDivCirculo(cirulos, numCirculos, radio) {
-			let originX = cirulos[0].offsetLeft;
-			let originY = cirulos[0].offsetTop;
-			cirulos.forEach((element,i) => {
-				element.style.left = `${originX + radio*Math.cos(angulo + 2*Math.PI/numCirculos*i)}px`;
-				element.style.top = `${originY + radio*Math.sin(angulo + 2*Math.PI/numCirculos*i)}px`;
-			});
+		function colorcarCirculos (radio) {
+			for (let nombreCirculo in arrCirculos) {
+				const cirulos = document.querySelectorAll("." + nombreCirculo + " .circulo");
+				cirulos.forEach((element,i) => {
+					element.style.left = `${
+						arrCirculos[nombreCirculo].originX +
+						radio*Math.cos(angulo + 2*Math.PI/arrCirculos[nombreCirculo].numCirculos*i)}px`;
+					element.style.top = `${
+						arrCirculos[nombreCirculo].originY +
+						radio*Math.sin(angulo + 2*Math.PI/arrCirculos[nombreCirculo].numCirculos*i)}px`;
+				});
+			}
 		}
+
+		$(window).resize(() => {
+			if($(window).width() > 800){
+				colorcarCirculos(170);
+			}else if($(window).width() > 600){
+				colorcarCirculos(150);
+			}else if($(window).width() > 500){
+				colorcarCirculos(160);
+			}else if($(window).width() > 400){
+				colorcarCirculos(140);
+			}else {
+				colorcarCirculos(110);
+			}
+		});
 
 
 		$("#formularioEnviarCorreo").submit(() => {
