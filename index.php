@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/timeline.css">
 	<link rel="stylesheet" type="text/css" href="css/tecnologiaYCertificaciones.css">
+	<link rel="stylesheet" type="text/css" href="css/certificaciones.css">
 	<link rel="stylesheet" type="text/css" href="css/proyectos.css">
 	<link rel="stylesheet" type="text/css" href="css/contactame.css">
 
@@ -43,7 +44,7 @@
 	<?php
 	include "views/timeline.html";
 	include "views/certificaciones.html";
-	include "views/tecnologias.html";
+	// include "views/tecnologias.html";
 	// include "views/proyectos.html";
 	include "views/contactame.html";
 	?>
